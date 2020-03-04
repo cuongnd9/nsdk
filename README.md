@@ -15,6 +15,14 @@ yarn add nsdk
 
 ## Usage
 
+```ts
+import { AppController, checkRole, config, handleError, request } from 'nsdk';
+import { AppError, BadRequest } from 'nsdk/errors';
+import { roles } from 'nsdk/constants';
+```
+
+See [node-kit](https://github.com/cuongw/node-kit) for more informations.
+
 ## License
 
 MIT © [cuongw](https://github.com/cuongw)
