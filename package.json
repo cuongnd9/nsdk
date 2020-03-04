@@ -3,7 +3,37 @@
   "version": "0.0.1",
   "description": "The 🚀 SDK for 🌲 Node application",
   "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "repository": "git@github.com:cuongw/nsdk.git",
   "author": "Cuong Duy Nguyen <cuongw.me@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "nsdk",
+    "node-sdk",
+    "cuongw"
+  ],
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "start": "node ./lib/index.js",
+    "start:dev": "ts-node ./src/index.ts",
+    "test": "npm run lint",
+    "build": "tsc",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint --fix src/**/*.ts",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.22.0",
+    "@typescript-eslint/parser": "^2.22.0",
+    "eslint": "^6.8.0",
+    "ts-node": "^8.4.1",
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.4.4"
+  }
 }
