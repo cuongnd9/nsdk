@@ -16,9 +16,8 @@ yarn add nsdk
 ## Usage
 
 ```ts
-import { AppController, checkRole, config, handleError, request } from 'nsdk';
-import { AppError, BadRequest } from 'nsdk/errors';
-import { roles } from 'nsdk/constants';
+import { AppController, checkRole, handleError, handleResponse, request } from 'nsdk';
+import { AppError, BadRequest } from 'nsdk/lib/errors';
 ```
 
 See [node-kit](https://github.com/cuongw/node-kit) for more informations.
