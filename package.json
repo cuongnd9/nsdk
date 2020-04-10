@@ -1,16 +1,16 @@
 {
   "name": "nsdk",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "The 🚀 SDK for 🌲 Node application",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
-  "repository": "git@github.com:cuongw/nsdk.git",
-  "author": "Cuong Duy Nguyen <cuongw.me@gmail.com>",
+  "repository": "git@github.com:103cuong/nsdk.git",
+  "author": "Cuong Duy Nguyen <103cuong@gmail.com>",
   "license": "MIT",
   "keywords": [
     "nsdk",
     "node-sdk",
-    "cuongw"
+    "103cuong"
   ],
   "files": [
     "lib/**/*"
